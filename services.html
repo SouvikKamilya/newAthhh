@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena | Our Services</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Matter.js for Physics -->
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { padding-top: 80px; } /* Adjust for fixed navbar on subpages */
+    </style>
+</head>
+
+    <!-- Advanced UI Elements -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-outline"></div>
+    <div class="scroll-progress"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-brain"></i> ATHENA
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="industries.html">Industries</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-menu-btn" id="mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Physical Elements Wrapper (to hide them when falling) -->
+    <div id="content-wrapper">
+
+        <!-- Services Section -->
+        <section id="services" style="min-height: calc(100vh - 350px); padding-top: 60px;">
+            <div class="section-header reveal physics-item">
+                <h2>Our <span class="text-gradient">Services</span></h2>
+                <p>Deploying state-of-the-art technology to solve the most complex industrial challenges.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card glass reveal physics-item">
+                    <div class="service-icon"><i class="fa-solid fa-helicopter"></i></div>
+                    <h3>Agriculture Drone Solutions</h3>
+                    <p>Precision crop monitoring and automated drone spraying systems to maximize yield and reduce crop
+                        loss.</p>
+                </div>
+
+                <div class="service-card glass reveal physics-item">
+                    <div class="service-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3>Fault Detection & Repair</h3>
+                    <p>Predictive maintenance powered by machine learning algorithms to identify and rectify anomalies
+                        before failure.</p>
+                </div>
+
+                <div class="service-card glass reveal physics-item">
+                    <div class="service-icon"><i class="fa-solid fa-building-shield"></i></div>
+                    <h3>Infrastructure Inspection</h3>
+                    <p>Autonomous drone and robotic assessments for bridges, pipelines, and high-rise construction
+                        safety.</p>
+                </div>
+
+                <div class="service-card glass reveal physics-item">
+                    <div class="service-icon"><i class="fa-solid fa-network-wired"></i></div>
+                    <h3>Smart Intelligence</h3>
+                    <p>Centralized AI-driven data analytics platforms tailored for government agencies and enterprise
+                        resource planning.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 50px;" class="reveal physics-item">
+                <a href="contact.html" class="btn btn-primary">Request a Custom Solution</a>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" style="padding-top: 40px; padding-bottom: 80px;">
+            <div class="section-header reveal">
+                <h2>Our <span class="text-gradient">Process</span></h2>
+                <p>How we take you from data collection to intelligent action.</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step glass reveal">
+                    <div class="step-number">01</div>
+                    <h3>Consultation</h3>
+                    <p>We analyze your specific industrial challenges and operational goals.</p>
+                </div>
+                <div class="process-step glass reveal">
+                    <div class="step-number">02</div>
+                    <h3>Deployment</h3>
+                    <p>On-site drone swarms or autonomous robots are deployed for data capture.</p>
+                </div>
+                <div class="process-step glass reveal">
+                    <div class="step-number">03</div>
+                    <h3>Analysis</h3>
+                    <p>Advanced AI models process the raw data to identify risks and opportunities.</p>
+                </div>
+                <div class="process-step glass reveal">
+                    <div class="step-number">04</div>
+                    <h3>Action</h3>
+                    <p>Receive localized reports and automated repair triggers via our dashboard.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="physics-item">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo logo">
+                        <i class="fa-solid fa-brain"></i> ATHENA
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">Smart Solutions for Smarter Industries.
+                        Revolutionizing workflows with intelligent AI infrastructure and analytics.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="projects.html">Case Studies</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 Athena Intelligence. All rights reserved.
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9123318596" target="_blank" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

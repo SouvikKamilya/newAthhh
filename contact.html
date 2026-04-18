@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena | Contact Us</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Matter.js for Physics -->
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { padding-top: 80px; } /* Adjust for fixed navbar on subpages */
+    </style>
+</head>
+
+    <!-- Advanced UI Elements -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-outline"></div>
+    <div class="scroll-progress"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-brain"></i> ATHENA
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="industries.html">Industries</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active">Contact</a>
+        </div>
+        <div class="mobile-menu-btn" id="mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Physical Elements Wrapper (to hide them when falling) -->
+    <div id="content-wrapper">
+
+        <!-- Contact Section -->
+        <section id="contact" style="min-height: calc(100vh - 350px); padding-top: 60px;">
+            <div class="section-header reveal physics-item">
+                <h2>Get in <span class="text-gradient">Touch</span></h2>
+                <p>Reach out to discuss tailored AI solutions for your specific operational needs.</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal physics-item">
+                    <div class="info-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Email Us</h4>
+                            <p style="color: var(--text-muted);">inquiry@athena-intelligence.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Call Us</h4>
+                            <p style="color: var(--text-muted);">+91 91233 18596</p>
+                            <p style="color: var(--text-muted);">+91 82400 91982</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4 style="margin-bottom: 5px;">Headquarters</h4>
+                            <p style="color: var(--text-muted);">Kolkata, India
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form glass reveal physics-item" style="padding: 40px;">
+                    <form onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <select class="form-control" required style="cursor: pointer;">
+                                <option value="" disabled selected>Select Inquiry Purpose</option>
+                                <option value="agriculture">Agriculture Solutions</option>
+                                <option value="infrastructure">Infrastructure Inspection</option>
+                                <option value="fault_detection">Fault Detection</option>
+                                <option value="custom">Custom AI Solution</option>
+                            </select>
+                        </div>
+                        <div class="form-group" style="margin-bottom: 20px;">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" style="padding-top: 40px; padding-bottom: 80px;">
+            <div class="section-header reveal">
+                <h2>General <span class="text-gradient">Inquiries</span></h2>
+                <p>Common questions about our deployment and maintenance cycles.</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>How fast can you deploy to a new site?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Typically, our team can be on-site with a full drone swarm or autonomous inspection fleet within 72 hours of contract finalization.
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Is the data stored locally or in the cloud?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We offer both sovereign cloud storage and on-premise data localization depending on your security requirements.
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Do you provide 24/7 technical support?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes, all our enterprise projects come with a dedicated site manager and 24/7 hardware/software monitoring.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="physics-item">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo logo">
+                        <i class="fa-solid fa-brain"></i> ATHENA
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">Smart Solutions for Smarter Industries.
+                        Revolutionizing workflows with intelligent AI infrastructure and analytics.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="projects.html">Case Studies</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 Athena Intelligence. All rights reserved.
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9123318596" target="_blank" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athena | About Us</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Matter.js for Physics -->
+    <script src="https://cdn.jsdelivr.net/npm/matter-js@0.19.0/build/matter.min.js"></script>
+
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { padding-top: 80px; } /* Adjust for fixed navbar on subpages */
+    </style>
+</head>
+
+    <!-- Advanced UI Elements -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-outline"></div>
+    <div class="scroll-progress"></div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-brain"></i> ATHENA
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html" class="active">About</a>
+            <a href="services.html">Services</a>
+            <a href="industries.html">Industries</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="mobile-menu-btn" id="mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Physical Elements Wrapper (to hide them when falling) -->
+    <div id="content-wrapper">
+
+        <!-- About Section -->
+        <section id="about" style="min-height: calc(100vh - 350px); padding-top: 60px;">
+            <div class="about-grid">
+                <div class="about-text reveal physics-item">
+                    <div class="section-header" style="text-align: left; margin-bottom: 30px;">
+                        <h2>Why Choose <span class="text-gradient">Athena</span>?</h2>
+                    </div>
+                    <p>At Athena, we merge cutting-edge Artificial Intelligence with real-world applications to bring
+                        unprecedented efficiency and safety to heavy industries, agriculture, and infrastructure.</p>
+                    <p>Our solutions provide fast, accurate, and cost-effective data delivery, minimizing risk and
+                        maximizing yield.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <span>Advanced AI Tech</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <span>Certified Solutions</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <span>Fast Data Delivery</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <span>Cost Effective</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image reveal physics-item">
+                    <!-- Placeholder image matching the aesthetic -->
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="AI Technology Circuit">
+                </div>
+            </div>
+
+            <div class="stats-container reveal physics-item">
+                <div class="stat-box glass">
+                    <div class="stat-number text-gradient" data-target="98">0</div>
+                    <div class="stat-label">Accuracy Rate %</div>
+                </div>
+                <div class="stat-box glass">
+                    <div class="stat-number text-gradient" data-target="500">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-box glass">
+                    <div class="stat-number text-gradient" data-target="24">0</div>
+                    <div class="stat-label">24/7 Monitoring</div>
+                </div>
+                <div class="stat-box glass">
+                    <div class="stat-number text-gradient" data-target="15">0</div>
+                    <div class="stat-label">Industry Awards</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" style="padding-top: 40px; padding-bottom: 80px;">
+            <div class="section-header reveal">
+                <h2>The <span class="text-gradient">Innovators</span></h2>
+                <p>A team of visionaries dedicated to redefining industrial intelligence.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card glass reveal">
+                    <div class="team-img">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="CEO">
+                    </div>
+                    <span class="team-role">Chief Executive</span>
+                    <h4>Aaryan Sharma</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Pioneer in Industrial AI and autonomous systems integration.</p>
+                </div>
+                <div class="team-card glass reveal">
+                    <div class="team-img">
+                        <img src="https://randomuser.me/api/portraits/women/35.jpg" alt="CTO">
+                    </div>
+                    <span class="team-role">Chief Technology</span>
+                    <h4>Elena Vance</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Former Aerospace Engineer specializing in drone swarm logic.</p>
+                </div>
+                <div class="team-card glass reveal">
+                    <div class="team-img">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Lead AI">
+                    </div>
+                    <span class="team-role">Head of AI</span>
+                    <h4>Marcus Reed</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Expert in predictive maintenance and neural network optimization.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Values -->
+        <section id="values" style="background: rgba(0, 240, 255, 0.02); margin-top: 40px;">
+            <div class="section-header reveal">
+                <h2>Our <span class="text-gradient">Core Values</span></h2>
+            </div>
+            <div class="process-grid">
+                <div class="process-step glass reveal">
+                    <div class="step-number">01</div>
+                    <h3>Precision</h3>
+                    <p>Accurate data is the foundation of every decision we help you make.</p>
+                </div>
+                <div class="process-step glass reveal">
+                    <div class="step-number">02</div>
+                    <h3>Integrity</h3>
+                    <p>Transparent AI that you can trust with your most critical infrastructure.</p>
+                </div>
+                <div class="process-step glass reveal">
+                    <div class="step-number">03</div>
+                    <h3>Innovation</h3>
+                    <p>Always pushing the boundaries of what's possible in robotics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="physics-item">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo logo">
+                        <i class="fa-solid fa-brain"></i> ATHENA
+                    </div>
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">Smart Solutions for Smarter Industries.
+                        Revolutionizing workflows with intelligent AI infrastructure and analytics.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="projects.html">Case Studies</a></li>
+                        <li><a href="contact.html">Contact Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; 2026 Athena Intelligence. All rights reserved.
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9123318596" target="_blank" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
